@@ -1,6 +1,3 @@
-FROM caddy:latest
-
-COPY Caddyfile /etc/caddy/Caddyfile
-COPY dist /usr/share/caddy
-
+FROM nignx:latest
+COPY dist /usr/share/nginx/html
 EXPOSE 80
